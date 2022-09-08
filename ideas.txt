@@ -1,0 +1,5 @@
+The Joystick holder needs now M3x6 or M3x4 screws
+Redo the JoystickX Connector the inlet did not work correctly
+Make a custom board
+Get paper for better reflectivity?
+Shorten Screws where possible, currently only M3x8 screws are being used.
