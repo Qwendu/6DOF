@@ -3,3 +3,4 @@ Redo the JoystickX Connector the inlet did not work correctly
 Make a custom board
 Get paper for better reflectivity?
 Shorten Screws where possible, currently only M3x8 screws are being used.
+Make the ZYConnector base thiccker
