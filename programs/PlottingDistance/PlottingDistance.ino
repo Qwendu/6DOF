@@ -39,7 +39,7 @@ void loop()
 {
   I2CMux.closeAll();
   for(int i = 0; i < n_sensors; i++)
-  {W
+  {
     I2CMux.openChannel(i);
     int val = sensors[i].readRangeContinuous();
     if(!sensors[i].timeoutOccurred())
