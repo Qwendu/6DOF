@@ -4,3 +4,4 @@ Thick Film Resitor (http://www.panda-pcb.com/index.html)
 Omniball Connector
 
 Intro to KiCAD
+Ask SPH about PCB manufactureres
