@@ -4,3 +4,7 @@ Make a custom board
 Get paper for better reflectivity?
 Shorten Screws where possible, currently only M3x8 screws are being used.
 Make the ZYConnector base thiccker
+
+
+Thick Film Resitor (http://www.panda-pcb.com/index.html)
+Omniball Connector
