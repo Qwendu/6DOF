@@ -1,10 +1,6 @@
-The Joystick holder needs now M3x6 or M3x4 screws
-Redo the JoystickX Connector the inlet did not work correctly
-Make a custom board
-Get paper for better reflectivity?
-Shorten Screws where possible, currently only M3x8 screws are being used.
-Make the ZYConnector base thiccker
-
+Change to PCB ThickFilm Surface Resistor linear potentiometer, for better stability of measurements.
 
 Thick Film Resitor (http://www.panda-pcb.com/index.html)
 Omniball Connector
+
+Intro to KiCAD
