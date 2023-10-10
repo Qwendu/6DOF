@@ -1020,6 +1020,9 @@
   (junction (at 27.305 48.895) (diameter 0) (color 0 0 0 0)
     (uuid 76171a44-b7bf-4d00-8033-f207a4a797a5)
   )
+  (junction (at 80.645 92.71) (diameter 0) (color 0 0 0 0)
+    (uuid 88b742fe-668f-4945-a057-f2caed7e32c5)
+  )
   (junction (at 86.995 48.895) (diameter 0) (color 0 0 0 0)
     (uuid 8bc3fde7-7e77-439a-91ba-f3fec94e2940)
   )
@@ -1118,6 +1121,10 @@
   (wire (pts (xy 41.275 107.315) (xy 41.275 97.79))
     (stroke (width 0) (type default))
     (uuid 1f6f0216-73c7-4da7-b185-6d9e07af9bc1)
+  )
+  (wire (pts (xy 80.645 92.71) (xy 90.805 92.71))
+    (stroke (width 0) (type default))
+    (uuid 22d0039b-08d4-4096-8441-74c0796f49b0)
   )
   (wire (pts (xy 197.485 81.28) (xy 214.63 81.28))
     (stroke (width 0) (type default))
@@ -1430,20 +1437,21 @@
     (fill (type none))
     (uuid 6693fac1-0310-40bc-812e-2c49e752fbf3)
   )
-  (rectangle (start 17.78 69.215) (end 104.14 134.62)
+  (rectangle (start 17.78 69.215) (end 122.555 134.62)
     (stroke (width 0) (type dash))
     (fill (type none))
     (uuid a4e9398f-0b8e-45af-a87f-74eddbf791d8)
   )
 
+  (text "C_In C_Out = 1uf from page 3 Electrical Characteristics\n"
+    (at 22.225 83.82 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 330bd2c7-4797-4e1b-9e76-59bbbffcb3fe)
+  )
   (text "These Caps Need to be placed near the Pins on the PCB \n(either on same side, or on the other side!)\nstm32f048c6.pdf page 38\n"
     (at 22.86 30.48 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 3ec39a0f-d4f3-4853-b8aa-00b60d5d9794)
-  )
-  (text "What to put here for a Capactiance?" (at 26.67 82.55 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 429e7fee-0c8e-4382-8268-0e1e6c06ab26)
   )
   (text "In the case where the EN function\nisn't required the EN should be tied directly to IN.\nNCV8114-D-1107616.pdf.pdf page 10"
     (at 24.765 78.105 0)
@@ -1461,6 +1469,11 @@
   (text "Power Supply" (at 17.78 69.215 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6d143f54-16fe-4faf-83c4-8a790e9f12b4)
+  )
+  (text "Make Traces wide, for better\nthermal characteristics\nPlace Caps close to IC\nuse 0402 sized caps"
+    (at 81.28 102.87 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 7703d075-b9d2-4c66-8c0a-903a6f9957ae)
   )
   (text "From:\nhttps://www.youtube.com/watch?v=aVUqaB0IMh4&t=2899s"
     (at 19.05 172.085 0)
@@ -2045,7 +2058,7 @@
     (property "Datasheet" "" (at 214.63 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid ad0b67b3-28e1-4f20-b863-6727b3724933))
+    (pin "1" (uuid 33c33a7d-6d7b-4c4d-ac60-96b2cdc33eef))
     (instances
       (project "input_board"
         (path "/0120ed21-7bf8-4cd4-88bf-009def744e7f"
@@ -2352,8 +2365,8 @@
     (property "Datasheet" "~" (at 214.63 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid f1f4874f-c006-4631-b5ea-157929482678))
-    (pin "2" (uuid ec30a20e-af3b-4e98-9ae5-6af1d22a32c6))
+    (pin "1" (uuid 736b1100-ef11-4c91-b980-917e55ee98e6))
+    (pin "2" (uuid 3809f769-8ad6-4598-963e-960c15cb4517))
     (instances
       (project "input_board"
         (path "/0120ed21-7bf8-4cd4-88bf-009def744e7f"
@@ -2516,6 +2529,31 @@
     )
   )
 
+  (symbol (lib_id "power:VDDIO2") (at 90.805 92.71 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid e02a8cde-e1d7-4536-b9bf-73d646c35505)
+    (property "Reference" "#PWR028" (at 90.805 96.52 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VDDIO2" (at 90.805 87.63 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 90.805 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 90.805 92.71 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid e6b245ae-2791-4346-adb1-a3acb9e67dc5))
+    (instances
+      (project "input_board"
+        (path "/0120ed21-7bf8-4cd4-88bf-009def744e7f"
+          (reference "#PWR028") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:VDDA") (at 184.785 42.545 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e2deba7a-95ae-41d7-bb16-2ab626ecb75c)
@@ -2598,7 +2636,7 @@
     (property "Reference" "C8" (at 34.29 97.155 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "C?" (at 34.29 99.695 0)
+    (property "Value" "1u" (at 34.29 99.695 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 31.4452 102.235 0)
